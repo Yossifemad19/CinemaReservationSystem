@@ -1,13 +1,19 @@
 ﻿open System
 open System.Windows.Forms
 open System.Drawing
+open System.IO
 
+open Data
 open Ticket
 
 [<EntryPoint>]
 let main argv=
-    
-    
+    let cinemaDataPath="CinemaData.json"
+
+    if not (File.Exists(cinemaDataPath)) then
+        let data = generateWeeklyBookings 4 4
+        saveDataToJson data cinemaDataPath
+
 
     let form=new Form(Text="Cinema Reservation System",Width=1000,Height=550)
 
@@ -77,7 +83,9 @@ let main argv=
     applyButton.Click.Add(fun _ ->
             //let day = daysDropDown.SelectedValue
             //MessageBox.Show($"day ->{day}")
-            Display_Seats(panal,4)
+            if File.Exists(cinemaDataPath) then
+                MessageBox.Show("data file exist") 
+                Display_Seats(panal,4)
     )
 
 
