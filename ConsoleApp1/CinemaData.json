@@ -1,841 +1,841 @@
 [
   {
     "Day": "Saturday",
-    "Parties": "12 am",
+    "Party": "12 am",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        true,
+        true,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Saturday",
-    "Parties": "3 pm",
+    "Party": "3 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Saturday",
-    "Parties": "6 pm",
+    "Party": "6 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Saturday",
-    "Parties": "9 pm",
+    "Party": "9 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Sunday",
-    "Parties": "12 am",
+    "Party": "12 am",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        true,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Sunday",
-    "Parties": "3 pm",
+    "Party": "3 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Sunday",
-    "Parties": "6 pm",
+    "Party": "6 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Sunday",
-    "Parties": "9 pm",
+    "Party": "9 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Monday",
-    "Parties": "12 am",
+    "Party": "12 am",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Monday",
-    "Parties": "3 pm",
+    "Party": "3 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Monday",
-    "Parties": "6 pm",
+    "Party": "6 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Monday",
-    "Parties": "9 pm",
+    "Party": "9 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Tuesday",
-    "Parties": "12 am",
+    "Party": "12 am",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Tuesday",
-    "Parties": "3 pm",
+    "Party": "3 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Tuesday",
-    "Parties": "6 pm",
+    "Party": "6 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Tuesday",
-    "Parties": "9 pm",
+    "Party": "9 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Wednesday",
-    "Parties": "12 am",
+    "Party": "12 am",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Wednesday",
-    "Parties": "3 pm",
+    "Party": "3 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Wednesday",
-    "Parties": "6 pm",
+    "Party": "6 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Wednesday",
-    "Parties": "9 pm",
+    "Party": "9 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Thursday",
-    "Parties": "12 am",
+    "Party": "12 am",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Thursday",
-    "Parties": "3 pm",
+    "Party": "3 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Thursday",
-    "Parties": "6 pm",
+    "Party": "6 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Thursday",
-    "Parties": "9 pm",
+    "Party": "9 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Friday",
-    "Parties": "12 am",
+    "Party": "12 am",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Friday",
-    "Parties": "3 pm",
+    "Party": "3 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Friday",
-    "Parties": "6 pm",
+    "Party": "6 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   },
   {
     "Day": "Friday",
-    "Parties": "9 pm",
+    "Party": "9 pm",
     "Seats": [
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ],
       [
-        0,
-        0,
-        0,
-        0
+        false,
+        false,
+        false,
+        false
       ]
     ]
   }
