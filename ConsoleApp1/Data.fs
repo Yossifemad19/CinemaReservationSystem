@@ -39,3 +39,4 @@ let saveDataToJson (cinemaData:CinemaData list) filename =
     File.WriteAllText(filename, json)
     printfn "Data saved to %s" filename
 
+
