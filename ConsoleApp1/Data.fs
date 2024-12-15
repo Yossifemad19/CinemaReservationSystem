@@ -3,16 +3,22 @@ open System.IO
 open System.Text.Json
 open System.Text.Json.Serialization
 
+type CinemaDataDTO = {
+    Day: string
+    Party: string
+    Seats: bool list list
+}
+
+
 type CinemaData(day: string, party: string, rows: int, cols: int) =
-    let mutable seats = Array2D.create rows cols 0
+    let mutable seats = Array2D.create rows cols false
     let day = day
     let party = party
 
-    member this.Day
-        with get() = day
-
-    member this.Party
-        with get() = party
+    member this.Day with get() = day
+    member this.Party with get() = party
+    member this.Rows with get() = rows
+    member this.Cols with get() = cols
 
     member this.Seats
         with get() = 
@@ -21,9 +27,24 @@ type CinemaData(day: string, party: string, rows: int, cols: int) =
 
     member this.UpdateSeat(row: int, col: int) =
         if row >= 0 && row < rows && col >= 0 && col < cols then
-            seats.[row, col] <- 1
+            seats.[row, col] <- true
         else
             failwith "Invalid row or column index"
+
+    member this.ToDto()=
+                { Day = day; Party = party; Seats = this.Seats }
+
+    static member FromDTO(dto: CinemaDataDTO) =
+        let rows = dto.Seats.Length
+        let cols = if rows > 0 then dto.Seats.[0].Length else 0
+        let instance = CinemaData(dto.Day, dto.Party, rows, cols)
+        for i in 0 .. rows - 1 do
+            for j in 0 .. cols - 1 do
+                if dto.Seats.[i].[j] = true then
+                    instance.UpdateSeat(i, j) 
+        instance
+    
+    // member this.
 
 let generateWeeklyBookings rows cols =
     let daysOfWeek = ["Saturday"; "Sunday"; "Monday"; "Tuesday"; "Wednesday"; "Thursday"; "Friday"]
@@ -34,73 +55,59 @@ let generateWeeklyBookings rows cols =
             yield CinemaData(day, party, rows, cols) ]
 
 let saveDataToJson (cinemaData:CinemaData list) filename =
+    let cinemaDto = cinemaData |>List.map(fun d -> d.ToDto())
     let options = JsonSerializerOptions(WriteIndented = true)
-    let json = JsonSerializer.Serialize(cinemaData, options)
+    let json = JsonSerializer.Serialize(cinemaDto, options)
     File.WriteAllText(filename, json)
     printfn "Data saved to %s" filename
 
 
-// Function to retrieve seats from JSON file
-let readCinemaData (day: string) (party: string) (filename: string) : Result<CinemaData, string> =
-    try
-        // Read and parse the JSON file
+let readCinemaData (day: string) (party: string) (filename: string):CinemaData option  =
+ 
+    if File.Exists(filename) then
         let json = File.ReadAllText(filename)
-        let records = JsonSerializer.Deserialize<CinemaData list>(json)
+        let records = JsonSerializer.Deserialize<CinemaDataDTO  list>(json)
         
-        // Find the matching record
-        match records |> List.tryFind (fun record -> 
+        records |> List.tryFind (fun record -> 
             record.Day.Equals(day, System.StringComparison.OrdinalIgnoreCase) && 
-            record.Party.Equals(party, System.StringComparison.OrdinalIgnoreCase)) with
-        | Some record -> Ok record
-        | None -> Error (sprintf "No record found for day: %s, party: %s" day party)
-    with
-    | :? IOException as e -> 
-        Error (sprintf "File Error: %s" e.Message)
-    | :? JsonException as e ->
-        Error (sprintf "JSON Parsing Error: %s" e.Message)
-    | ex ->
-        Error (sprintf "Unexpected Error: %s" ex.Message)
+            record.Party.Equals(party, System.StringComparison.OrdinalIgnoreCase)) 
+            |> Option.map CinemaData.FromDTO
+    else
+        None
 
         
 
-        // Function to update seats and overwrite JSON file
 
 
-
-
-let updateSeats (day: string) (party: string) (filename: string) (updatedRecord: CinemaData) =
+let updateSeatsJson (day: string) (party: string) (filename: string) (updatedRecord: CinemaData) =
     try
-        // Read and parse the JSON file
         let json = File.ReadAllText(filename)
-        let records = JsonSerializer.Deserialize<CinemaData list>(json)
+        let records = JsonSerializer.Deserialize<CinemaDataDTO list>(json)
 
         if List.isEmpty records then
             printfn "No records found in the file."
         else
-            // Update the matching record
             let updatedRecords =
                 records 
                 |> List.map (fun record ->
                     if record.Day.Equals(day, System.StringComparison.OrdinalIgnoreCase) &&
                        record.Party.Equals(party, System.StringComparison.OrdinalIgnoreCase) then
-                        updatedRecord // Replace with the updated record
+                        let updatedData = updatedRecord.ToDto() 
+                        updatedData
                     else
-                        record // Keep other records unchanged
+                        record
                 )
 
-            // Write the updated records back to the file
             let updatedJson = JsonSerializer.Serialize(updatedRecords, JsonSerializerOptions(WriteIndented = true))
             File.WriteAllText(filename, updatedJson)
             printfn "Seats updated successfully."
 
     with
-    | :? IOException as e ->
+    | :? IOException as e -> 
         printfn "File Error: %s" e.Message
-    | :? JsonException as e ->
+    | :? JsonException as e -> 
         printfn "JSON Parsing Error: %s" e.Message
-    | ex ->
+    | ex -> 
         printfn "Unexpected Error: %s" ex.Message
-
-
 
 

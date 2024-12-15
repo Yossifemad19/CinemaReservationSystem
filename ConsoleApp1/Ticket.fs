@@ -6,11 +6,13 @@ open System.Text.Json
 
 type Ticket( day: string,party:string,seat:int*int, userName: string) =
 
-    member this.Id = Guid.NewGuid()
-    member this.Seat = seat
-    member this.Day = day
-    member this.Party = party
-    member this.UserName = userName
+    let id = Guid.NewGuid()  
+
+    member this.Id with get() = id  
+    member this.Seat with get() = seat
+    member this.Day with get() = day
+    member this.Party with get() = party
+    member this.UserName with get() = userName
 
 let createTicket day party seat userName = Ticket(day,party,seat,userName)
 
@@ -41,6 +43,8 @@ let readSpecificTicket (day: string) (party: string) (seat: int*int) =
         // Filter the tickets based on the parameters
         tickets
         |> List.tryFind (fun ticket ->
-            ticket.Day = day && ticket.Party = party && ticket.Seat = seat)
+            ticket.Day.Equals(day, System.StringComparison.OrdinalIgnoreCase) && 
+            ticket.Party.Equals(party, System.StringComparison.OrdinalIgnoreCase) 
+            && ticket.Seat = seat)
     else
         None

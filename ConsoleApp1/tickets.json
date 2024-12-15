@@ -1,0 +1,32 @@
+[
+  {
+    "Id": "7e644846-982b-4772-b839-009dc2ccfefc",
+    "Seat": {
+      "Item1": 0,
+      "Item2": 0
+    },
+    "Day": "Sunday",
+    "Party": "12 am",
+    "UserName": "emad"
+  },
+  {
+    "Id": "2f857150-fefe-482a-8cad-e67e31c521ab",
+    "Seat": {
+      "Item1": 0,
+      "Item2": 1
+    },
+    "Day": "Saturday",
+    "Party": "12 am",
+    "UserName": "youssef"
+  },
+  {
+    "Id": "34cd2e1f-cd69-4da5-8948-aaaacdef01b6",
+    "Seat": {
+      "Item1": 0,
+      "Item2": 0
+    },
+    "Day": "Saturday",
+    "Party": "12 am",
+    "UserName": "youssef"
+  }
+]
